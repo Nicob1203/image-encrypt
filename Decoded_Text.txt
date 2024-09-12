@@ -1,0 +1,15 @@
+Hello world, testing how this encoding program can encode an external text file. This would allow for more advanced messages to be encoded and transmitted to each other.
+
+
+I wonder how advanced, like does this work with extra new lines between. 
+
+Can i add numbers? -1 -2 -3 999
+
+
+
+
+
+
+
+
+How many lines till I have an error?

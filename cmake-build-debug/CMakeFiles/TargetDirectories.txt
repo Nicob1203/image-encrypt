@@ -1,0 +1,3 @@
+/Users/nicobartello/Desktop/Img Encrpt/cmake-build-debug/CMakeFiles/Personal_C.dir
+/Users/nicobartello/Desktop/Img Encrpt/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/nicobartello/Desktop/Img Encrpt/cmake-build-debug/CMakeFiles/rebuild_cache.dir
