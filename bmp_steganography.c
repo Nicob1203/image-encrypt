@@ -273,11 +273,26 @@ int revtf(FILE *bmp_file, DIBHeader *header)
     return 0;
 }
 
+void printCommands()
+{
+    printf("Commands: \n--revi <image.jpg> = reveals if there is a hidden image within\n");
+    printf("--hidef <source_image.bmp> <image_to_hide.bmp> = hides the second bmp file within the first (Dimensions must be the same)\n");
+    printf("--hidet <image.bmp> = hides the text submitted by prompt within the bmp file\n");
+    printf("--hidetf <image.bmp> <textfile.txt> = hides the text within the text file in the bmp file\n");
+    printf("--revt <image_with_hidden_text.bmp> = reveals the text hidden by the hidet method\n");
+    printf("--revtf <image_with_hidden_text_file.bmp> = reveals the text file hidden in the image and outputs it to decode.txt\n");
+    printf("--info <image.bmp> = prints the DIB and BMP header information of the file\n");
+}
+
 int main(int argc, char *argv[]) {
     //Makes sure the program was called with something
+    if(!strcmp(argv[1], "--help"))
+    {
+        printCommands();
+        return 1;
+    }
     if(argc<3 || (!strcmp(argv[1], "--hidef") && argc<4)) {
         printf("ERROR: Missing arguments.\n");
-        printf("Arguments: \n--revi <image.jpg> = reveals if there is a hidden image within\n");
         return 1;
     }
 
